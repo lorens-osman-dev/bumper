@@ -4,9 +4,9 @@
 	"version": "1.3.5",
 	"type": "module",
 	"scripts": {
-		"bump": "bun bump-version.ts",
-		"dd": "bump --commit 'v%s' --tag '%s' manifest.json",
-		"tt": "git push && git push --tags"
+		"bump:script": "bun bump-version.ts",
+		"bump": "bump --commit 'v%s' --tag '%s' manifest.json",
+		"bump:push": "git push && git push --tags"
 	},
 	"devDependencies": {
 		"@types/bun": "latest",

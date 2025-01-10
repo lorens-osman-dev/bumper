@@ -5,7 +5,8 @@
 	"type": "module",
 	"scripts": {
 		"bump": "bun bump-version.ts",
-		"dd": "bump manifest.json"
+		"dd": "bump --commit 'v%s' --tag '%s' manifest.json",
+		"tt": "git push && git push --tags"
 	},
 	"devDependencies": {
 		"@types/bun": "latest",
